@@ -1,6 +1,7 @@
-*******************************
+*************************************************************
 This is the start of testing
-*******************************
+Begin of the testing
+*************************************************************
 
 #
 # instruction on how to text
@@ -8,6 +9,7 @@ This is the start of testing
 # I'm adding this file to simulate somebody else editing the project
 #
 
-*******************************
+*************************************************************
 This is the end of testing
-*******************************
+End of the testing
+*************************************************************
