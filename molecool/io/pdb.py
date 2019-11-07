@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 
 def open_pdb(file_location):
-   """
+    """
     This function opens and reads in a pdb file and returns the atom names and coordinates.
 
     The pdb file must specify the atom elements on the last column,
