@@ -6,6 +6,8 @@ molecool
 [![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master)
 
 A python package for analyzing and visualizing molecules. For the MolSSI Best Practices Workshop.
+This repository is currently under development. This can be installed in a development environment by using the following command in the project folder:
+`pip install -e .`
 
 ### Copyright
 
