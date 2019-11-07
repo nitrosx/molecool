@@ -10,11 +10,32 @@ Handles the primary functions
 import numpy as np
 
 
-def calculate_distance(rA, rB):
-    # This function calculates the distance between two points given as numpy arrays.
-    d=(rA-rB)
-    dist=np.linalg.norm(d)
-    return dist
+def calculate_distance(point_A, point_B):
+    """
+    This function calculates the distance between two points given as numpy arrays.
+   
+    Parameters
+    ----------
+    point_A, point_B : np.ndarray
+        Space coordinates of the 2 molecules.
+
+    Returns
+    ------- 
+    distance : np.float
+        Euclidean distance between the two points.
+
+    Examples
+    --------
+    >>> r1 = np.array([0, 0, 0])
+    >>> r2 = np.array([3.0, 0, 0])
+    >>> calculate_distance(r1, r2)
+    3.0
+    """
+    # this doc string are in numpy style
+
+    distance_vector = (point_A - pointB)
+    distance = np.linalg.norm(distance_vector)
+    return distance
 
 
 def calculate_angle(rA, rB, rC, degrees=False):
@@ -28,18 +49,4 @@ def calculate_angle(rA, rB, rC, degrees=False):
         return np.degrees(theta)
     else:
         return theta
-
-def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
-    
-    # Find the bonds in a molecule (set of coordinates) based on distance criteria.
-    bonds = {}
-    num_atoms = len(coordinates)
-
-    for atom1 in range(num_atoms):
-        for atom2 in range(atom1, num_atoms):
-            distance = calculate_distance(coordinates[atom1], coordinates[atom2])
-            if distance > min_bond and distance < max_bond:
-                bonds[(atom1, atom2)] = distance
-
-    return bonds
 
