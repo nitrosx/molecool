@@ -1,5 +1,5 @@
 """
-vis.py
+visualize.py
 A python package for visualizing molecules. 
 For the MolSSI Best Practices Workshop.
 
@@ -8,11 +8,11 @@ Handles the primary functions
 
 #
 # import libraries
-import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-from mpl_toolkits.mplot3d import Axes3D
+# local import
+from .data import atom_colors
 
 
 def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi=300):
