@@ -8,6 +8,7 @@ Begin of the testing
 #
 # I'm adding this file to simulate somebody else editing the project
 #
+# I added this line from the web interfaces
 
 *************************************************************
 This is the end of testing
