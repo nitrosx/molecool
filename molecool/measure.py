@@ -33,7 +33,7 @@ def calculate_distance(point_A, point_B):
     """
     # this doc string are in numpy style
 
-    distance_vector = (point_A - pointB)
+    distance_vector = (point_A - point_B)
     distance = np.linalg.norm(distance_vector)
     return distance
 
