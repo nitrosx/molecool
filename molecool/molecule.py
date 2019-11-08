@@ -80,4 +80,6 @@ def calculate_molecular_mass(symbols):
    mass : float
        The mass of the molecule
    """
-   pass
+   
+   return sum([atomic_weights[atom] for atom in symbols])
+
