@@ -62,8 +62,7 @@ def calculate_center_of_mass(symbols, coordinates):
    for i in range(len(symbols)):
        mass_array[i] = atomic_weights[symbols[i]]
 
-   #center_of_mass = sum(coordinates * mass_array) / total_mass
-   center_of_mass = sum(coordinates * mass_array)
+   center_of_mass = sum(coordinates * mass_array) / total_mass
 
    return center_of_mass
 
